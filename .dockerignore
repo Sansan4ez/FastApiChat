@@ -1,0 +1,9 @@
+.git
+.gitignore
+.DS_Store
+._.DS_Store
+demo.gif
+db.sqlite3
+data
+__pycache__
+*.pyc

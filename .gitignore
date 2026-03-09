@@ -14,3 +14,14 @@ __pycache__/
 # Игнорирование настроек проекта для PyCharm
 .idea/
 **/.idea/
+# Local runtime data
+/data/
+*.sqlite3
+
+# Env files
+.env
+.env.*
+
+# OS cruft
+.DS_Store
+._*

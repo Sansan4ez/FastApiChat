@@ -16,3 +16,4 @@ class SUserAuth(BaseModel):
 class SUserRead(BaseModel):
     id: int = Field(..., description="Идентификатор пользователя")
     name: str = Field(..., min_length=3, max_length=50, description="Имя, от 3 до 50 символов")
+    has_unread: bool = Field(default=False, description="Есть ли непрочитанные сообщения")

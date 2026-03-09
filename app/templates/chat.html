@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мини-чат</title>
-    <link rel="stylesheet" type="text/css" href="/static/styles/chat.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles/chat.css?v=20260310-2">
 </head>
 <body>
 <div class="chat-container">
@@ -30,10 +30,10 @@
         <div class="messages" id="messages">
             <div class="welcome-message">Выберите чат для общения</div>
         </div>
-        <div class="input-area">
+        <form class="input-area" id="messageForm" autocomplete="off">
             <input type="text" id="messageInput" placeholder="Введите сообщение..." disabled>
-            <button id="sendButton" disabled>Отправить</button>
-        </div>
+            <button id="sendButton" type="submit" disabled>Отправить</button>
+        </form>
     </div>
 </div>
 
@@ -42,6 +42,6 @@
     const currentUserId = parseInt("{{ user.id }}", 10);
 </script>
 
-<script src="/static/js/chat.js"></script>
+<script src="/static/js/chat.js?v=20260310-2"></script>
 </body>
 </html>
